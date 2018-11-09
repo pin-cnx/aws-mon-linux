@@ -94,6 +94,7 @@ Name                       | Description
 --debug                    | Displays information for debugging.
 --from-cron                | Use this option when calling the script from cron.
 --profile VALUE            | Use a specific profile from your credential file.
+--autoscale VALUE          | Use a specific auto scale group name.
 --load-ave1                | Reports load average for 1 minute in counts.
 --load-ave5                | Reports load average for 5 minutes in counts.
 --load-ave15               | Reports load average for 15 minutes in counts.
@@ -176,3 +177,6 @@ crontab -e
 ```
 */5 * * * *  ~/aws-mon-linux/aws-mon.sh --all-items --disk-path=/ --from-cron
 ```
+
+#### To use for auto scale group
+./aws-mon.sh --autoscale AUTO_SCALE_NAME
